@@ -1,0 +1,24 @@
+<clickhouse>
+    <!-- Other configurations -->
+    
+    <keeper_server>
+        <tcp_port>9181</tcp_port>
+        <server_id>1</server_id>
+        <log_storage_path>/var/lib/clickhouse/coordination/log</log_storage_path>
+        <snapshot_storage_path>/var/lib/clickhouse/coordination/snapshots</snapshot_storage_path>
+
+        <raft_configuration>
+            <server>
+                <id>1</id>
+                <host>192.168.19.131</host>
+                <port>9181</port>
+            </server>
+            <server>
+                <id>2</id>
+                <host>192.168.19.134</host>
+                <port>9181</port>
+            </server>
+            <!-- Add more servers as needed -->
+        </raft_configuration>
+    </keeper_server>
+</clickhouse>
