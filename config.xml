@@ -14,3 +14,14 @@
         </my_cluster>
     </remote_servers>
 </clickhouse>
+
+<users>
+    <default>
+        <profile>default</profile>
+        <quota>default</quota>
+        <password></password>
+        <networks>
+            <ip>::/0</ip>
+        </networks>
+    </default>
+</users>
